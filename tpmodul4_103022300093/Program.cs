@@ -2,8 +2,12 @@
 {
     static void Main()
     {
-        Console.Write("Masukkan nama kelurahan: ");
-        string kelurahan = Console.ReadLine();
-        Console.WriteLine("Kode Pos: " + KodePos.getKodePos(kelurahan));
+        DoorMachine pintu = new DoorMachine();
+
+        Console.WriteLine("\nMenekan tombol buka pintu...");
+        pintu.BukaPintu();
+
+        Console.WriteLine("\nMenekan tombol kunci pintu...");
+        pintu.KunciPintu();
     }
 }
